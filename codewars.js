@@ -1,3 +1,3 @@
-function setAlarm(employed, vacation){
-    return employed && !vacation;
-  }
+const stringToNumber = function(str){
+    return +str
+    }

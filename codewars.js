@@ -1,11 +1,10 @@
-// In this kata you will create a function that takes in a list and returns a list with the reverse order.
-
-// Examples (Input -> Output)
-// * [1, 2, 3, 4]  -> [4, 3, 2, 1]
-// * [9, 2, 0, 7]  -> [7, 0, 2, 9]
+// Bob needs a fast way to calculate the volume of a cuboid with three values: the length, width and height of the cuboid. Write a function to help Bob with this calculation.
 
 
 
-function reverseList(list) {
-    return list.reverse()
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+  return length * width * height
     }
+  }

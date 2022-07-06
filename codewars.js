@@ -1,11 +1,18 @@
-// There are pillars near the road. The distance between the pillars is the same and the width of the pillars is the same. Your function accepts three arguments:
+// Rock Paper Scissors
+// Let's play! You have to return which player won! In case of a draw return Draw!.
 
-// number of pillars (≥ 1);
-// distance between pillars (10 - 30 meters);
-// width of the pillar (10 - 50 centimeters).
-// Calculate the distance between the first and the last pillar in centimeters (without the width of the first and last pillar).
+// Examples(Input1, Input2 --> Output):
 
+const rps = (p1, p2) => {
 
-function pillars(num_pill, dist, width) {
-    return num_pill == 1  ? 0 : ((num_pill-2)*width) + ((100*dist)*(num_pill-1)) 
-  }
+    if (p1 == p2)
+      {return "Draw!";}
+      
+    else if ((p1 == "scissors" && p2 == "paper") || 
+              (p1 == "paper" && p2 == "rock") || 
+              (p1 == "rock" && p2 == "scissors") )
+      {return "Player 1 won!";}
+      
+    else 
+      { return "Player 2 won!";}
+    };
